@@ -16,10 +16,16 @@ const eslintConfig = [
     languageOptions: {
       ecmaVersion: 2021,
       sourceType: "module",
+      globals: {
+        window: "readonly",
+        document: "readonly",
+      },
     },
-    env: {
-      browser: true,
-      es2021: true,
+    linterOptions: {
+      env: {
+        browser: true,
+        es2021: true,
+      },
     },
     rules: {
       "react/react-in-jsx-scope": "off",
