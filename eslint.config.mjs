@@ -21,11 +21,9 @@ const eslintConfig = [
         document: "readonly",
       },
     },
-    linterOptions: {
-      env: {
-        browser: true,
-        es2021: true,
-      },
+    env: {
+      browser: true,
+      es2021: true,
     },
     rules: {
       "react/react-in-jsx-scope": "off",
